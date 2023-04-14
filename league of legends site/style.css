@@ -9,13 +9,18 @@
 body{
 
     margin: 0%;
+    background-color: #ebe5c5;
+    
 
     
 }
 
 .pagina1{
-    margin: 0%;
+    margin: 10%;
     max-width: 100%;
+    box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.534);
+    border-radius: 7px 7px 7px 7px;
+    background-color: white;
 }
 
 h1{
