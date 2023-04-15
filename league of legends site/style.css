@@ -1,9 +1,5 @@
 @charset "UTF-8";
 
-*{
-    height:auto;
-}
-
 
 
 body{
@@ -16,8 +12,9 @@ body{
 }
 
 .pagina1{
-    margin: 10%;
-    max-width: 100%;
+    max-width: 900px;
+    padding: 10px 10px 10px 10px ;
+    margin: auto;
     box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.534);
     border-radius: 7px 7px 7px 7px;
     background-color: white;
