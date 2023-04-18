@@ -81,11 +81,16 @@ a:active{
 
 .img-jhin {
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 2s ease-in-out;
 }
 
 .img-jhin.show {
   opacity: 1;
+}
+
+.img2{
+  text-align: center;
+  max-width: 100%;
 }
     </style>
 </head>
@@ -100,12 +105,14 @@ a:active{
       <p>Veja a ilustração abaixo;</p>
 
       <div>
-        <img src="imagens/jhin1234.jpg" alt="">
+        <img class="img2" src="imagens/jhin1234.jpg" alt="">
       </div>
+      <br>
+      <br>
 
       <div>
         <img class="img-jhin" src="imagens/jhin.png" alt="">
-        </div>
+      </div>
 
      <h1>Para Mais Fotos</h1>
 
@@ -122,10 +129,10 @@ a:active{
     const { top, bottom } = imgJhin.getBoundingClientRect();
     const windowHeight = window.innerHeight;
 
-  if (top < windowHeight && bottom > 0) {
+   if (top < windowHeight && bottom > 0) {
     imgJhin.classList.add('show');
-   }
-   });
+    }
+    });
   </script>
     
     
