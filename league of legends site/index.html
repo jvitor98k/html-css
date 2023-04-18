@@ -6,15 +6,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>JHIN</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+           
+body{
+
+  margin: 0%;
+  background-color: #ebe5c5;
+  
+
+  
+}
+
+.pagina1{
+  max-width: 900px;
+  padding: 10px 10px 10px 10px ;
+  margin: auto;
+  box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.534);
+  border-radius: 7px 7px 7px 7px;
+  background-color: white;
+}
+
+h1{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  
+  
+  }
+
+
+
+p{
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+
+div{
+  text-align: justify;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  
+
+}
+div img{
+  max-width: 100%;
+  
+}
+
+
+a{
+  color: rgb(209, 16, 16);
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+
+a:visited{
+  color: darkred;
+
+}
+
+a:hover{
+  color: black;
+  text-decoration: underline;
+}
+
+a:active{
+  color: rgb(172, 27, 116);
+}
+
+.linkdomais{
+  text-align: center;
+}
+
+.img-jhin {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.img-jhin.show {
+  opacity: 1;
+}
+    </style>
 </head>
 <body>
     <div class="pagina1">
      <H1>Jhin, o Virtuoso</H1>
       <p>Jhin é um meticuloso psicopata criminoso que acredita que o assassinato é uma arte. Outrora um prisioneiro ioniano, mas libertado por membros obscuros do conselho regimental de Ionia, o assassino serial agora trabalha como assassino de seu conluio.</p>
-     <div>
-     <img src="imagens/jhin.png" alt="">
-     </div>
+    
      <p>A mente de Jhin, um psicopata criminoso de Runeterra, é um mistério para muitos, mas o que realmente traz um ar de suspense ao campeão de League of Legends é sua máscara.</p>
      <p>Vale lembrar que este é um conceito do campeão sem sua máscara. Um dia, caso a Riot revele o rosto de Jhin oficialmente, pode ser que a desenvolvedora opte por uma versão diferente desta.       
      </p>
@@ -24,6 +103,10 @@
         <img src="imagens/jhin1234.jpg" alt="">
       </div>
 
+      <div>
+        <img class="img-jhin" src="imagens/jhin.png" alt="">
+        </div>
+
      <h1>Para Mais Fotos</h1>
 
      <div class="linkdomais"><a href="https://www.google.com/search?q=jhin&sxsrf=AJOqlzWAU7Vd8zHFqHcimr7SVse_iBGNDg:1673910798432&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjwyprUm838AhX3HrkGHchnALsQ_AUoAXoECAEQAw&biw=1920&bih=937&dpr=1" target="_blank" title="abrir outra   pagina">click aqui</a></div>
@@ -31,6 +114,19 @@
      <audio src="audio/Jhinmusc.mp3" controls loop></audio>
      <video src=""></video>
   </div>
+
+  <script>
+    const imgJhin = document.querySelector('.img-jhin');
+
+    window.addEventListener('scroll', () => {
+    const { top, bottom } = imgJhin.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+
+  if (top < windowHeight && bottom > 0) {
+    imgJhin.classList.add('show');
+   }
+   });
+  </script>
     
     
 </body>
