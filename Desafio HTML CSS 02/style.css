@@ -1,9 +1,22 @@
 @charset "UTF-8";
 
 
+/*
+usar na configuracao globao
+margin 0px
+padding 0px
+max-width 100%
+
+EXEMPLO
+
 *{
-    box-sizing: content-box;
+    margin 0px;
+    padding 0px;
+    max-width 100%;
 }
+
+
+*/
 
 @import url('https://fonts.googleapis.com/css2?family=Gajraj+One&display=swap');
 
