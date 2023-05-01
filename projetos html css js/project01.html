@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário</title>
+    <style>
+        body{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculando média</h1>
+    <p>Para que a aluno seja aprovado, terá que tirar a média 7.</p>
+    <input type="number" name="numero1" id="n1">
+    <input type="number" name="numero2" id="n2">
+    <input type="button" value="Calcular" onclick="calcular()" >
+    <div id="res">
+        Resultado:
+
+    </div>
+
+    <script>
+
+        function calcular(){
+            var numero11 = document.getElementById('n1')
+            var numero22 = document.getElementById('n2')
+            var res = document.getElementById('res')
+            var n11 = Number(numero11.value)
+            var n22 = Number(numero22.value)
+            var r = n11*n22/2
+        
+            if(r<=6){
+                res.innerHTML = `Sua média foi ${r}, Você está Reprovado!`
+                  
+            } else if (r>=7){
+                res.innerHTML = `Sua média foi ${r}, Você está Aprovado!`
+            }
+
+
+
+        }
+
+    </script>
+    
+    
+</body>
+</html>
