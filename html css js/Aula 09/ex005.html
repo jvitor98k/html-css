@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>primeiros passos com DOM</title>
+    <style>
+        body{
+            background-color: rgb(31, 38, 136);
+            color: white;
+            font: normal 18px arial
+            
+        }
+
+        div{
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            max-width: 100%;
+        }
+        img{
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>iniciando estudos de DOM</h1>
+    <p>aqui vai o resutado</p>
+    <p>aprendendo a usar o <strong>DOM</strong> em Javascript</p>
+    <div id="teste1">click em min</div>
+    <div class="teste2">test02</div>
+    <div class="teste3">teste03</div>
+    <div id="teste4">teste04</div>
+    <img class="img1" src="jhin1234.jpg" alt="">
+    
+    
+
+    <script>
+        var corpo = document.getElementsByTagName('body')[0]
+        corpo.style.background = 'black'
+        
+        var p1 = document.getElementsByTagName('p')[1]
+        p1.style.color = 'red'
+
+        var p2 = document.getElementsByTagName('img')[0]
+        p2.style.borderRadius='20px'
+        
+
+        var ts = document.getElementById('teste1')
+        ts.style.background = 'blue'
+
+        var t2 = document.getElementsByClassName('teste2')[0]
+        t2.style.background='green'
+
+        var d = document.querySelector('div.teste3')
+        d.style.background='red'
+
+        var t4 = document.querySelector('div#teste4')
+        t4.style.background='yellow'
+        t4.style.color='red'
+
+
+
+        
+    </script>
+</body>
+</html>
