@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hora do Dia</title>
     <style>
+
+        
+
         body{
-            background-color: rgb(206, 189, 144);
+
             font: normal 15pt Arial;  
         }
 
@@ -24,10 +27,11 @@
             height: 500px;
             border-radius: 10px;
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.336);
+            text-align: center;
         }
     </style>
 </head>
-<body>
+<body onload="carregar()">
 
     <header>
         <h1>Hora do Dia</h1>
@@ -35,12 +39,12 @@
 
     <section>
 
-        <div>
-        asd
+        <div id="msg">
+        Hora
         </div>
 
-        <div id="div2">
-        asdasd
+        <div id="foto">
+        <img id="imagem" src="fotomanha.jpg" alt="Foto do dia">
         </div>
 
     </section>
