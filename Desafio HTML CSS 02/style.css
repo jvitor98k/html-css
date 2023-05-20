@@ -79,6 +79,27 @@ div{
 
 }
 
+.menu{
+    background-color:rgb(26, 92, 56) ;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+
+}
+
+nav a {
+    background-color:rgb(26, 92, 56) ;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+nav > a:hover{
+    background-color: #83e1ad;
+    border-radius: 10px;
+    color: black;
+    transition-duration: 0.5s;
+}
+
 
 
 aside{
@@ -110,6 +131,8 @@ a{
 p{
     text-align: justify;
     text-indent: 20px;
+    font-size: 1em;
+    line-height: 2em;
 
 }
 
@@ -123,7 +146,7 @@ ul{
 
 .aseparado{
     text-align: center;
-    font-family:'Gajraj One', cursive;
+    font-family:Arial, Helvetica, sans-serif;
 
 }
 
@@ -135,4 +158,10 @@ img{
 
 footer{
     text-align: center;
+}
+
+.final a{
+    background-color:rgb(26, 92, 56) ;
+    color: black;
+    
 }
