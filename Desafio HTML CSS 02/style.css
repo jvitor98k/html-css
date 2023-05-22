@@ -92,7 +92,6 @@ nav a {
     color: white;
     text-decoration: none;
     padding: 10px;
-    border-radius: 10px;
 }
 nav > a:hover{
     background-color: #83e1ad;
