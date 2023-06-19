@@ -5,7 +5,9 @@
 body{
 
     margin: 0%;
-    background-color: #ebe5c5;
+    background-image: url(imagens/jhin_turntable_img.jpg) ;
+    background-size:2000px 800px ;
+    background-repeat: no-repeat;
     
   
     
