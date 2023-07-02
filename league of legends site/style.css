@@ -4,10 +4,12 @@
 
 body{
 
+    
     margin: 0%;
     background-image: url(imagens/jhin_turntable_img.jpg) ;
-    background-size:2000px 800px ;
+    background-size:cover ;
     background-repeat: no-repeat;
+
     
   
     
